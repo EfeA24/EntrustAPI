@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Entities.Models
 {
-    class Item
+    public class Item
     {
         [Key]
         public int ItemId { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string ItemName { get; set; } = null!;
+
+        [Required]
         public int ItemQuantity { get; set; }
     }
 }
