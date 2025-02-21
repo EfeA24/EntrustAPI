@@ -12,7 +12,7 @@ namespace Services.Contrats
         IEnumerable<Employee> GetAllEmployees(bool trackChanges);
         Employee GetEmployeeById(int employeeId, bool trackChanges);
         Employee CreateEmployee(Employee employee);
-        void UpdateEmployee(int id,Employee employee, bool trackChanges);
-        void DeleteEmployeeById(int id, Employee employee, bool trackChanges);
+        void UpdateEmployee(int id, Employee employee, bool trackChanges);
+        void DeleteEmployeeById(int id, bool trackChanges);
     }
 }

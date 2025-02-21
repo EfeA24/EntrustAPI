@@ -26,7 +26,7 @@ namespace Services
             return employee;
         }
 
-        public void DeleteEmployeeById(int id, Employee employee, bool trackChanges)
+        public void DeleteEmployeeById(int id, bool trackChanges)
         {
             var entity = _manager.Employee.GetEmployeeById(id, trackChanges);
             if (entity == null)
@@ -58,7 +58,6 @@ namespace Services
             entity.EmployeeName = employee.EmployeeName;
             entity.EmployeePosition = employee.EmployeePosition;
             entity.EmployeeDepartment = employee.EmployeeDepartment;
-
             _manager.Employee.UpdateEmployee(entity);
 
         }
