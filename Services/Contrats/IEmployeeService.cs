@@ -11,8 +11,8 @@ namespace Services.Contrats
     {
         IEnumerable<Employee> GetAllEmployees(bool trackChanges);
         Employee GetEmployeeById(int employeeId, bool trackChanges);
-        void CreateEmployee(Employee employee);
-        void UpdateEmployee(Employee employee);
-        void DeleteEmployeeById(Employee employee);
+        Employee CreateEmployee(Employee employee);
+        void UpdateEmployee(int id,Employee employee, bool trackChanges);
+        void DeleteEmployeeById(int id, Employee employee, bool trackChanges);
     }
 }

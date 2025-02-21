@@ -9,8 +9,8 @@ namespace Repositories.Contracts
     public interface IRepositoryManager
     {
         IEmployeeRepository Employee { get; }
-        IItemRepository Item { get; }
         IEntrustRepository Entrust { get; }
+        IItemRepository Item { get; }
         void Save();
 
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.Contracts
 {
-    public interface IEmployeeRepository
+    public interface IEmployeeRepository : IRepositoryBase<Employee>
     {
         IQueryable<Employee> GetAllEmployees(bool trackChanges);
         Employee GetEmployeeById(int employeeId, bool trackChanges);

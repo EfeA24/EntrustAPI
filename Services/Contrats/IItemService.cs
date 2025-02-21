@@ -11,7 +11,7 @@ namespace Services.Contrats
     {
         IEnumerable<Item> GetAllItems(bool trackChanges);
         Item GetItemById(int itemId, bool trackChanges);
-        void CreateItem(Item item);
+        Item CreateItem(Item item);
         void UpdateItem(Item item);
         void DeleteItemById(Item item);
     }
